@@ -1,0 +1,7 @@
+<h1><%= @article.title %></h1>
+<p><%= @article.body %> </p>
+
+<%= link_to "<< GTF out of here. go read something else.", articles_path %>
+ <p>or</p>
+ <%= link_to "seriously. fix this shit.", edit_article_path(@article) %>  or
+<%= link_to "get rid of this crap.", article_path(@article), data: {confirm: "Seriously? deleting means giving up on that vision."}, method: :delete %>
